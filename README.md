@@ -1,43 +1,71 @@
-# California Housing Price Prediction
+# 🏡 California Housing Price Prediction
 
-Machine Learning project using the California Housing dataset.
-
----
-
-## Project Objectives
-
-- Perform Exploratory Data Analysis (EDA)
-- Build Linear Regression from scratch using NumPy
-- Compare with Scikit-learn implementation
-- Evaluate model performance
-- Visualize results
+A complete Machine Learning project for predicting California housing prices using Linear Regression, Ridge Regression and Lasso Regression.
 
 ---
 
-## Dataset
+## 📌 Project Overview
 
-Dataset: California Housing
+This project aims to predict the median house value in California districts using the California Housing Dataset provided by scikit-learn.
 
-Loaded directly from Scikit-learn:
+The project covers the complete Machine Learning workflow:
 
-```python
-from sklearn.datasets import fetch_california_housing
+- Data Loading
+- Exploratory Data Analysis (EDA)
+- Data Preprocessing
+- Linear Regression from Scratch (NumPy)
+- Linear Regression using Scikit-learn
+- Ridge Regression
+- Lasso Regression
+- Model Evaluation
+- Data Visualization
+
+---
+
+## 📂 Project Structure
+
+```text
+california-housing-regression/
+│
+├── data/
+├── figures/
+├── models/
+├── notebooks/
+├── src/
+│   ├── data_loader.py
+│   ├── preprocessing.py
+│   ├── visualization.py
+│   ├── evaluate.py
+│   ├── linear_numpy.py
+│   ├── linear_sklearn.py
+│   └── model_compare.py
+│
+├── train.py
+├── requirements.txt
+├── README.md
+├── LICENSE
+└── .gitignore
 ```
+
+---
+
+## 📊 Dataset
+
+Dataset:
+
+California Housing Dataset
+
+Source:
+
+Scikit-learn
 
 Number of samples:
 
-20640
+20,640
 
 Features:
 
-- MedInc
-- HouseAge
-- AveRooms
-- AveBedrms
-- Population
-- AveOccup
-- Latitude
-- Longitude
+8 numerical features
 
 Target:
 
@@ -45,41 +73,9 @@ Median House Value
 
 ---
 
-## Project Structure
+## ⚙️ Installation
 
-```text
-california-housing-regression
-│
-├── data
-├── figures
-├── models
-├── notebooks
-│   ├── 01_EDA.ipynb
-│   ├── 02_Preprocessing.ipynb
-│   ├── 03_LinearRegression_FromScratch.ipynb
-│   ├── 04_Sklearn.ipynb
-│   └── 05_ModelComparison.ipynb
-│
-├── src
-│   ├── data_loader.py
-│   ├── preprocessing.py
-│   ├── visualization.py
-│   ├── evaluate.py
-│   ├── linear_numpy.py
-│   ├── linear_sklearn.py
-│   ├── model_compare.py
-│   └── train.py
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
-
----
-
-## Installation
-
-Clone the repository
+Clone repository
 
 ```bash
 git clone https://github.com/xlink-it1k69/california-housing-regression.git
@@ -107,53 +103,82 @@ pip install -r requirements.txt
 
 ---
 
-## Run
+## 🚀 Usage
 
-Train model
+Train all models
 
 ```bash
-python src/train.py
+python train.py
 ```
 
 ---
 
-## Models
+## 📈 Models
 
 - Linear Regression (NumPy)
 - Linear Regression (Scikit-learn)
-
-Future
-
 - Ridge Regression
 - Lasso Regression
 
 ---
 
-## Evaluation Metrics
+## 📉 Evaluation Metrics
 
-- MAE
-- MSE
-- RMSE
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
 - R² Score
 
 ---
 
-## Visualizations
+## 📸 Visualizations
+
+The project generates:
 
 - Histogram
-- Heatmap
+- Correlation Heatmap
 - Boxplot
-- Prediction vs Actual
+- Scatter Plot
 - Residual Plot
-
+- Prediction vs Actual
+- Coefficient Comparison
 - Learning Curve
 
 ---
 
-## Author
+## 📝 Results
 
-Xuân Linh Đinh
+| Model | MAE | RMSE | R² |
+|------|------:|------:|------:|
+| Linear Regression | - | - | - |
+| Ridge Regression | - | - | - |
+| Lasso Regression | - | - | - |
 
-Computer Science Student
+(These values will be updated after training.)
+
+---
+
+## 🔮 Future Work
+
+- Polynomial Regression
+- Elastic Net
+- Random Forest
+- XGBoost
+- Hyperparameter Optimization
+- Streamlit Deployment
+
+---
+
+## 👤 Author
+
+Dinh Xuan Linh
+
+Second-year Computer Science Student
 
 Hanoi University of Science and Technology (HUST)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
