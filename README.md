@@ -145,6 +145,7 @@ Future
 - Boxplot
 - Prediction vs Actual
 - Residual Plot
+
 - Learning Curve
 
 ---
