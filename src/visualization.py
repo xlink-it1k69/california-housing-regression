@@ -246,3 +246,14 @@ def plot_learning_curve(
     plt.title("Learning Curve")
 
     save_figure("learning_curve.png")
+
+if __name__ == "__main__":
+    from data_loader import load_data
+
+    df = load_data()
+
+    plot_histograms(df)
+    plot_heatmap(df)
+    plot_boxplots(df)
+
+    print("Done!")
